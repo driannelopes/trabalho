@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head >
+    <title>QUESTÃO 04</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+</head>
+<body>
+      <div>
+        <script>
+            var produto = prompt("Digite o nome do produto")
+            var quantidade = prompt("Digite a quantidade")
+            var preço = 3
+            var total = quantidade * preço
+            var totalpagar = total - desconto
+
+            document.write("Produto: " + produto + "<br>")
+            document.write("Quantidade : " + quantidade + "<br>")
+            document.write("Preço unitário : " + preço + "<br>")
+
+            if (quantidade <= 5){
+            var desconto = total * 0.2
+            document.write("Preço total: " + desconto + "<br>")
+           }else if ((quantidade > 5) && (quantidade <= 10) ){
+            var desconto = total * 0.3
+            document.write("Preço total: " + desconto + "<br>")
+           }else if (quantidade > 10 ){
+            var desconto = total * 0.5
+            document.write("Preço total: " + desconto + "<br>")
+           }
+
+
+
+        </script>
+      </div>
+</body>
+</html> 
